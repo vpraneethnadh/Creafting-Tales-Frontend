@@ -1,0 +1,358 @@
+.profile-page {
+  min-height: calc(100vh - 90px);
+  padding: 70px 20px;
+  background: #fffaf7;
+  color: #152d50;
+}
+
+.profile-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.profile-eyebrow {
+  margin: 0 0 10px;
+  color: #c95b78;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.profile-header h1 {
+  margin: 0 0 12px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 42px;
+  line-height: 1.2;
+}
+
+.profile-header > p:last-child {
+  margin: 0 auto;
+  max-width: 550px;
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.profile-card {
+  padding: 32px;
+  background: #ffffff;
+  border: 1px solid #eadfdb;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(21, 45, 80, 0.06);
+}
+
+.profile-user-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.profile-avatar-wrapper {
+  margin-bottom: 18px;
+}
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff0f3;
+  box-shadow: 0 5px 20px rgba(201, 91, 120, 0.15);
+}
+
+.profile-avatar-placeholder {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #fff0f3;
+  font-size: 40px;
+}
+
+.profile-user-card h2 {
+  margin: 0 0 7px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 25px;
+}
+
+.profile-email {
+  margin: 0;
+  color: #777;
+  font-size: 14px;
+  word-break: break-word;
+}
+
+.profile-logout {
+  margin-top: 22px;
+  padding: 11px 28px;
+  border: 1px solid #c95b78;
+  border-radius: 8px;
+  background: transparent;
+  color: #c95b78;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.profile-logout:hover {
+  background: #c95b78;
+  color: #ffffff;
+}
+
+.profile-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.profile-card-eyebrow {
+  margin: 0 0 7px;
+  color: #c95b78;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.profile-card h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 24px;
+}
+
+.profile-card-icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #fff0f3;
+  font-size: 20px;
+}
+
+.profile-empty {
+  padding: 25px 10px;
+  text-align: center;
+}
+
+.profile-empty-icon {
+  margin-bottom: 12px;
+  font-size: 35px;
+}
+
+.profile-empty h3 {
+  margin: 0 0 8px;
+  color: #152d50;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 20px;
+}
+
+.profile-empty p {
+  max-width: 330px;
+  margin: 0 auto 20px;
+  color: #777;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.profile-shop-button,
+.profile-login-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 24px;
+  border-radius: 8px;
+  background: #c95b78;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.profile-shop-button:hover,
+.profile-login-button:hover {
+  background: #b84f6c;
+  transform: translateY(-1px);
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-detail-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee5e2;
+}
+
+.profile-detail-row:first-child {
+  padding-top: 0;
+}
+
+.profile-detail-row:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.profile-detail-row span {
+  color: #777;
+  font-size: 14px;
+}
+
+.profile-detail-row strong {
+  max-width: 60%;
+  color: #152d50;
+  font-size: 14px;
+  text-align: right;
+  word-break: break-word;
+}
+
+.profile-login-card {
+  width: 100%;
+  max-width: 500px;
+  margin: 80px auto;
+  padding: 50px 40px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #eadfdb;
+  border-radius: 22px;
+  box-shadow: 0 15px 45px rgba(21, 45, 80, 0.07);
+  text-align: center;
+}
+
+.profile-login-card h1 {
+  margin: 0 0 12px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 36px;
+}
+
+.profile-login-card > p:not(.profile-eyebrow) {
+  margin: 0 auto 25px;
+  color: #777;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.profile-loading {
+  display: flex;
+  min-height: 60vh;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-size: 15px;
+}
+
+@media (max-width: 900px) {
+  .profile-page {
+    padding: 55px 20px;
+  }
+
+  .profile-grid {
+    gap: 18px;
+  }
+
+  .profile-card {
+    padding: 26px;
+  }
+}
+
+@media (max-width: 700px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-header h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  .profile-page {
+    min-height: calc(100vh - 75px);
+    padding: 40px 16px;
+  }
+
+  .profile-header {
+    margin-bottom: 30px;
+  }
+
+  .profile-header h1 {
+    font-size: 32px;
+  }
+
+  .profile-header > p:last-child {
+    font-size: 14px;
+  }
+
+  .profile-card {
+    padding: 24px 20px;
+    border-radius: 17px;
+  }
+
+  .profile-card h2 {
+    font-size: 21px;
+  }
+
+  .profile-detail-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .profile-detail-row strong {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .profile-login-card {
+    margin: 40px auto;
+    padding: 35px 22px;
+  }
+
+  .profile-login-card h1 {
+    font-size: 31px;
+  }
+}
+
+@media (max-width: 400px) {
+  .profile-page {
+    padding: 30px 12px;
+  }
+
+  .profile-card {
+    padding: 20px 16px;
+  }
+
+  .profile-avatar,
+  .profile-avatar-placeholder {
+    width: 85px;
+    height: 85px;
+  }
+}

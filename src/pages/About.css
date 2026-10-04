@@ -1,0 +1,521 @@
+/* =========================================================
+   CRAFTING TALES - ABOUT PAGE
+   ========================================================= */
+
+.about-page {
+  min-height: 100vh;
+  background: #fff9f7;
+  color: #172f55;
+  overflow: hidden;
+}
+
+/* =========================================================
+   COMMON CONTAINER
+   ========================================================= */
+
+.about-container {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+/* =========================================================
+   TYPOGRAPHY
+   ========================================================= */
+
+.about-page h1,
+.about-page h2,
+.about-page h3,
+.about-page p {
+  margin-top: 0;
+}
+
+.about-page h1,
+.about-page h2,
+.about-page h3 {
+  color: #17345d;
+}
+
+.about-page p {
+  color: #53657d;
+  line-height: 1.75;
+}
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.about-eyebrow {
+  margin: 0 0 14px;
+  color: #ce5c7c !important;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 1.3 !important;
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.about-hero {
+  position: relative;
+  padding: 110px 0 95px;
+  background:
+    radial-gradient(
+      circle at 88% 25%,
+      rgba(239, 174, 193, 0.18),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 12% 70%,
+      rgba(240, 200, 213, 0.14),
+      transparent 25%
+    ),
+    #fff9f7;
+}
+
+.about-hero::after {
+  content: "✿";
+  position: absolute;
+  right: 9%;
+  top: 55px;
+  font-size: 120px;
+  color: rgba(206, 92, 124, 0.07);
+  transform: rotate(15deg);
+  pointer-events: none;
+}
+
+.about-hero .about-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1180px;
+}
+
+.about-hero h1 {
+  margin: 0 0 18px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(52px, 7vw, 88px);
+  font-weight: 700;
+  line-height: 0.98;
+  letter-spacing: -2px;
+}
+
+.about-intro {
+  max-width: 700px;
+  margin: 0 !important;
+  font-size: 20px;
+  line-height: 1.7 !important;
+  color: #5c6d82 !important;
+}
+
+/* =========================================================
+   STORY SECTION
+   ========================================================= */
+
+.about-story {
+  padding: 105px 0;
+  background: #ffffff;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(300px, 0.75fr);
+  gap: 90px;
+  align-items: center;
+}
+
+/* Main story */
+
+.about-content {
+  max-width: 720px;
+}
+
+.about-content h2 {
+  margin: 0 0 24px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(36px, 4vw, 52px);
+  line-height: 1.08;
+  letter-spacing: -1px;
+}
+
+.about-content p:not(.about-eyebrow) {
+  margin: 0 0 18px;
+  font-size: 17px;
+}
+
+.about-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================================
+   HIGHLIGHT CARD
+   ========================================================= */
+
+.about-highlight {
+  position: relative;
+  padding: 52px 42px;
+  border: 1px solid #ead8d8;
+  border-radius: 28px;
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(245, 194, 209, 0.35),
+      transparent 45%
+    ),
+    #fff8f9;
+  box-shadow: 0 20px 55px rgba(48, 37, 42, 0.08);
+  overflow: hidden;
+}
+
+.about-highlight::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  right: -80px;
+  top: -80px;
+  border-radius: 50%;
+  background: rgba(206, 92, 124, 0.08);
+}
+
+.about-highlight-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 28px;
+  border-radius: 50%;
+  background: #fff0f4;
+  color: #ce5c7c;
+  font-size: 30px;
+}
+
+.about-highlight h3 {
+  position: relative;
+  margin: 0 0 12px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px;
+}
+
+.about-highlight p {
+  position: relative;
+  margin: 0;
+  font-size: 16px;
+}
+
+/* =========================================================
+   VALUES
+   ========================================================= */
+
+.about-values {
+  padding: 110px 0;
+  background: #fff9f7;
+}
+
+.about-section-heading {
+  margin-bottom: 55px;
+  text-align: center;
+}
+
+.about-section-heading .about-eyebrow {
+  margin-bottom: 12px;
+}
+
+.about-section-heading h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(40px, 5vw, 58px);
+  line-height: 1.05;
+  letter-spacing: -1px;
+}
+
+.about-values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* =========================================================
+   VALUE CARD
+   ========================================================= */
+
+.about-value-card {
+  position: relative;
+  min-height: 300px;
+  padding: 38px 32px;
+  border: 1px solid #eadcdc;
+  border-radius: 24px;
+  background: #ffffff;
+  box-shadow: 0 12px 35px rgba(43, 36, 40, 0.05);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+  overflow: hidden;
+}
+
+.about-value-card::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  right: -75px;
+  top: -75px;
+  border-radius: 50%;
+  background: #fff0f4;
+  pointer-events: none;
+}
+
+.about-value-card:hover {
+  transform: translateY(-7px);
+  border-color: #e7c4cf;
+  box-shadow: 0 20px 45px rgba(43, 36, 40, 0.09);
+}
+
+.about-value-icon {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  background: #fff0f4;
+  color: #ce5c7c;
+  font-size: 28px;
+}
+
+.about-value-card h3 {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 12px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.about-value-card p {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-size: 15.5px;
+}
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.about-cta {
+  position: relative;
+  padding: 115px 0;
+  text-align: center;
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(235, 161, 185, 0.18),
+      transparent 35%
+    ),
+    #ffffff;
+}
+
+.about-cta .about-container {
+  max-width: 760px;
+}
+
+.about-cta h2 {
+  margin: 0 auto 18px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(38px, 5vw, 58px);
+  line-height: 1.08;
+  letter-spacing: -1px;
+}
+
+.about-cta p:not(.about-eyebrow) {
+  max-width: 620px;
+  margin: 0 auto 30px;
+  font-size: 17px;
+}
+
+/* =========================================================
+   SHOP BUTTON
+   ========================================================= */
+
+.about-shop-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 30px;
+  border-radius: 999px;
+  background: #ce5c7c;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 12px 25px rgba(206, 92, 124, 0.22);
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.about-shop-button:hover {
+  background: #b94c6d;
+  transform: translateY(-2px);
+  box-shadow: 0 16px 30px rgba(206, 92, 124, 0.28);
+}
+
+.about-shop-button:active {
+  transform: translateY(0);
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .about-container {
+    width: min(100% - 40px, 700px);
+  }
+
+  .about-hero {
+    padding: 85px 0 75px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .about-content {
+    max-width: none;
+  }
+
+  .about-highlight {
+    max-width: 600px;
+  }
+
+  .about-values {
+    padding: 85px 0;
+  }
+
+  .about-values-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .about-value-card {
+    min-height: auto;
+  }
+
+  .about-cta {
+    padding: 90px 0;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .about-container {
+    width: calc(100% - 32px);
+  }
+
+  .about-hero {
+    padding: 70px 0 60px;
+  }
+
+  .about-hero::after {
+    right: -15px;
+    top: 35px;
+    font-size: 90px;
+  }
+
+  .about-eyebrow {
+    font-size: 11px;
+    letter-spacing: 2.3px;
+    margin-bottom: 11px;
+  }
+
+  .about-hero h1 {
+    font-size: 48px;
+    letter-spacing: -1px;
+  }
+
+  .about-intro {
+    font-size: 17px;
+  }
+
+  .about-story {
+    padding: 70px 0;
+  }
+
+  .about-content h2 {
+    font-size: 36px;
+  }
+
+  .about-content p:not(.about-eyebrow) {
+    font-size: 15.5px;
+    line-height: 1.7 !important;
+  }
+
+  .about-highlight {
+    padding: 35px 28px;
+    border-radius: 22px;
+  }
+
+  .about-highlight h3 {
+    font-size: 25px;
+  }
+
+  .about-values {
+    padding: 70px 0;
+  }
+
+  .about-section-heading {
+    margin-bottom: 35px;
+  }
+
+  .about-section-heading h2 {
+    font-size: 40px;
+  }
+
+  .about-value-card {
+    padding: 32px 26px;
+    border-radius: 20px;
+  }
+
+  .about-value-icon {
+    margin-bottom: 22px;
+  }
+
+  .about-value-card h3 {
+    font-size: 24px;
+  }
+
+  .about-value-card p {
+    font-size: 15px;
+  }
+
+  .about-cta {
+    padding: 75px 0;
+  }
+
+  .about-cta h2 {
+    font-size: 38px;
+  }
+
+  .about-cta p:not(.about-eyebrow) {
+    font-size: 15.5px;
+  }
+
+  .about-shop-button {
+    width: 100%;
+    max-width: 280px;
+  }
+}
