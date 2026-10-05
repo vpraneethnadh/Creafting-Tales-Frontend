@@ -76,7 +76,7 @@ const Contact = () => {
 
                 <div>
                   <h3>Phone</h3>
-                  <p>+91 00000 00000</p>
+                  <p>+91 93981 21417</p>
                 </div>
               </div>
 
@@ -85,7 +85,7 @@ const Contact = () => {
 
                 <div>
                   <h3>Location</h3>
-                  <p>Hyderabad, India</p>
+                  <p>Banglore, India</p>
                 </div>
               </div>
             </div>
