@@ -42,7 +42,8 @@ import "./Checkout.css";
 // EMAIL SERVER
 // ---------------------------------------------------------
 
-const EMAIL_SERVER_URL = "http://localhost:5000";
+// const EMAIL_SERVER_URL = "http://localhost:5000";
+const EMAIL_SERVER_URL = "https://crafting-tales.onrender.com";
 
 // ---------------------------------------------------------
 // UPI DETAILS
