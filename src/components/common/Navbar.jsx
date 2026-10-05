@@ -37,14 +37,6 @@ const Navbar = () => {
             Shop
           </NavLink>
 
-          <NavLink to="/about" className={linkClass()}>
-            About
-          </NavLink>
-
-          <NavLink to="/contact" className={linkClass()}>
-            Contact
-          </NavLink>
-
           <NavLink
             to="/wishlist"
             className={linkClass("wishlist-link")}
@@ -58,6 +50,14 @@ const Navbar = () => {
             )}
           </NavLink>
 
+          <NavLink to="/about" className={linkClass()}>
+            About
+          </NavLink>
+
+          <NavLink to="/contact" className={linkClass()}>
+            Contact
+          </NavLink>
+          
           <NavLink to="/cart" className={linkClass("cart-link")}>
             Cart
 
