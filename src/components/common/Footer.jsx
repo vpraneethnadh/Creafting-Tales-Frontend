@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
+import "./Footer.css";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-inner">
-        <div>
+
+        <div className="footer-brand">
           <h2>Crafting Tales</h2>
+
           <p>
             Handmade chenille creations crafted with love and care.
           </p>
@@ -19,6 +22,7 @@ const Footer = () => {
           <Link to="/cart">Cart</Link>
           <Link to="/orders">My Orders</Link>
         </div>
+
       </div>
 
       <div className="footer-bottom">
